@@ -2,8 +2,9 @@ import AboutSection from "@/components/about";
 import Header from "@/components/header";
 import HeroCarousel from "@/components/heroCarousel";
 import Footer from "@/components/Footer";
-import Products from "@/components/products";
 import Contact from "@/components/contact";
+import Gallery from "@/components/gallery";
+import CompanyTimeline from "@/components/companyTimeline";
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
     <Header />
     <HeroCarousel />
     <AboutSection />
-    <Products />
+    <CompanyTimeline />
+    <Gallery />
     <Contact />
     <Footer />
    </>

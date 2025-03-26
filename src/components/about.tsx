@@ -1,52 +1,42 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import Image from 'next/image';
+import React from "react";
 
-const AboutSection = () => {
+export default function CompanyHistory() {
   return (
-    <section className="bg-gray-100 py-16 px-6 md:px-12">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        <motion.div
-          className="w-full md:w-1/2"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <Image
-            src="/images/about-metal.jpg" // Incluir imagem real
-            alt="Sobre nossa indústria"
-            width={600}
-            height={400}
-            className="rounded-lg shadow-lg"
+    <section className="w-full bg-gradient-to-r from-gray-900 to-gray-700 text-white py-16 px-6">
+      <div className="max-w-5xl mx-auto text-center">
+        <h2 className="text-4xl font-bold mb-6">Nossa História</h2>
+        <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-12">
+          Desde nossa fundação, buscamos inovação e excelência na indústria
+          metalúrgica. Ao longo dos anos, crescemos, evoluímos e nos tornamos
+          referência no setor, sempre comprometidos com qualidade e inovação.
+        </p>
+      </div>
+      
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="relative">
+          <div className="absolute inset-0 bg-black opacity-40 rounded-lg"></div>
+          <img
+            src="/images/history.jpg"
+            alt="Nossa trajetória"
+            className="w-full rounded-lg shadow-lg object-cover h-96"
           />
-        </motion.div>
+        </div>
 
-        <motion.div
-          className="w-full md:w-1/2 text-center md:text-left"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-        >
-          <h2 className="text-4xl font-bold text-gray-900">
-            Inovação e Precisão na Indústria Metalúrgica
-          </h2>
-          <p className="mt-4 text-gray-700 text-lg">
-            Com anos de experiência no setor, oferecemos soluções de alta qualidade, 
-            combinando tecnologia de ponta e expertise técnica para atender às necessidades 
-            do mercado.
+        <div className="space-y-6">
+          <h3 className="text-3xl font-semibold">Do Passado ao Futuro</h3>
+          <p className="text-gray-300 text-lg">
+            Com décadas de experiência, nossa empresa se destacou pelo compromisso
+            com a inovação, sustentabilidade e excelência. Cada peça produzida é
+            resultado de um processo meticuloso e de alta qualidade.
           </p>
-          <p className="mt-2 text-gray-700 text-lg">
-            Nosso compromisso é com a excelência, garantindo produtos duráveis, precisos e 
-            que impulsionam o crescimento dos nossos clientes.
+          <p className="text-gray-300 text-lg">
+            Hoje, continuamos expandindo nossos horizontes, investindo em tecnologia e
+            garantindo soluções cada vez mais eficientes para nossos clientes.
           </p>
-          <button className="mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">
-            Saiba Mais
-          </button>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
-};
-
-export default AboutSection;
+}
