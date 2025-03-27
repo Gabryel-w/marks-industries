@@ -28,11 +28,11 @@ body {
 
 .custom-swiper .swiper-button-next,
 .custom-swiper .swiper-button-prev {
-  color: white !important; /* Cor das setas */
+  color: white !important; 
 }
 
 .custom-swiper .swiper-button-next:hover,
 .custom-swiper .swiper-button-prev:hover {
-  color: #3b82f6 !important; /* Cor azul ao passar o mouse */
+  color: #3b82f6 !important; 
 }
 

@@ -49,7 +49,7 @@ const HeroCarousel = () => {
                 objectFit="cover"
                 priority
               />
-              {/* Escurecimento ajustado para melhor contraste */}
+
               <div className="absolute inset-0 bg-black/80"></div>
               
               <div className="relative z-10 text-center text-white px-6">
