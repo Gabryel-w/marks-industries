@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Contact from "@/components/contact";
 import Gallery from "@/components/gallery";
 import CompanyTimeline from "@/components/companyTimeline";
+import Products from "@/components/products";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
     <HeroCarousel />
     <AboutSection />
     <CompanyTimeline />
+    <Products />
     <Gallery />
     <Contact />
     <Footer />
