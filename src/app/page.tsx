@@ -1,20 +1,21 @@
-import AboutSection from "@/components/about";
+
+import About from "@/components/about";
 import Header from "@/components/header";
-import HeroCarousel from "@/components/heroCarousel";
 import Footer from "@/components/Footer";
 import Contact from "@/components/contact";
 import Gallery from "@/components/gallery";
-import CompanyTimeline from "@/components/companyTimeline";
-import Products from "@/components/products";
+import Projects from "@/components/projects";
+import Hero from "@/components/hero";
+import Services from "@/components/services";
 
 export default function Home() {
   return (
    <>
     <Header />
-    <HeroCarousel />
-    <AboutSection />
-    <CompanyTimeline />
-    <Products />
+    <Hero />
+    <About />
+    <Services />
+    <Projects />
     <Gallery />
     <Contact />
     <Footer />
