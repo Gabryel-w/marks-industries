@@ -31,14 +31,14 @@ export default function Gallery() {
   };
 
   return (
-    <section id="gallery" className="py-24 bg-[#1E293B]">
+    <section id="gallery" className="py-24 bg-[#1E40AF]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <div className="inline-block bg-[#D97706]/20 rounded-lg px-3 py-1 text-[#D97706] font-medium text-sm mb-3">
+          <div className="inline-block bg-blue-600 rounded-lg px-3 py-1 text-white font-medium text-sm mb-3">
             Nossa Galeria
           </div>
           <h2 className="font-heading font-bold text-3xl md:text-4xl lg:text-5xl mb-6 text-white">
-            Registros da <span className="text-[#D97706]">Metalurgia</span>
+            Registros da <span className="text-white">Metalurgia</span>
           </h2>
         </div>
             

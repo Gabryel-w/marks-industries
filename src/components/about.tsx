@@ -37,7 +37,7 @@ export default function About() {
               "https://images.unsplash.com/photo-1571586100127-cdaef780fc61?auto=format&fit=crop&w=640&q=80",
               "https://images.unsplash.com/photo-1473621038790-b778b4750efe?auto=format&fit=crop&w=640&q=80",
               "https://images.unsplash.com/photo-1534398079543-7ae6d016b86a?auto=format&fit=crop&w=640&q=80",
-              "/about/imagem1.jpg"
+              "/about/about1.jpg"
 
             ].map((src, index) => (
               <div

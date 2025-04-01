@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { ArrowRight, Heart, Shield, Clock, Award } from "lucide-react";
 import { services } from "@/lib/constants";
 
@@ -39,7 +40,7 @@ export default function Services() {
             { icon: Award, title: "Expertise Legado", text: "Conhecimento passado por gerações." },
           ].map((item, index) => (
             <div key={index} className="text-center px-4">
-              <div className="w-14 h-14 rounded-full bg-[#374151] text-yellow-300  flex items-center justify-center mx-auto mb-4">
+              <div className="w-14 h-14 rounded-full bg-[#374151] text-yellow-300 flex items-center justify-center mx-auto mb-4">
                 <item.icon className="h-7 w-7" />
               </div>
               <h3 className="font-medium text-white text-lg mb-2">{item.title}</h3>
@@ -53,10 +54,13 @@ export default function Services() {
           {services.map((service) => (
             <div key={service.id} className="group">
               <div className="relative mb-6 overflow-hidden rounded-xl">
-                <img
+                <Image
                   src={service.image}
                   alt={service.title}
+                  width={640} 
+                  height={400} 
                   className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105"
+                  priority={service.id === 1} 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70"></div>
                 <div className="absolute bottom-0 left-0 p-6">

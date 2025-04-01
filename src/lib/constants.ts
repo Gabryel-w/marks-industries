@@ -2,41 +2,42 @@
 export const services = [
   {
     id: 1,
-    title: "Precision Metalworking",
-    description: "Our advanced machinery and skilled technicians deliver unmatched precision in metal fabrication.",
-    image: "https://images.unsplash.com/photo-1560716092-43c2a08a62c4?auto=format&fit=crop&w=640&q=80",
+    title: "Fabricação Artesanal em Metal",
+    description: "Combinamos experiência e dedicação para criar peças metálicas com alto nível de precisão e acabamento.",
+    image: "/services/service1.jpg",
   },
   {
     id: 2,
-    title: "Custom Alloy Development",
-    description: "We engineer proprietary metal alloys tailored to your specific performance requirements.",
-    image: "https://images.unsplash.com/photo-1473621038790-b778b4750efe?auto=format&fit=crop&w=640&q=80",
+    title: "Soluções em Ligas Metálicas",
+    description: "Trabalhamos com diferentes tipos de metais e ligas para atender às necessidades específicas de cada cliente.",
+    image: "/services/service6.jpg",
   },
   {
     id: 3,
-    title: "Advanced Manufacturing",
-    description: "Utilizing cutting-edge technologies to create complex metal components with superior quality.",
-    image: "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?auto=format&fit=crop&w=640&q=80",
+    title: "Soluções Sob Medida",
+    description: "Cada projeto é tratado com atenção especial, garantindo que cada peça seja feita exatamente como você precisa.",
+    image: "/services/service2.jpg",
   },
   {
     id: 4,
-    title: "Heat Treatment Solutions",
-    description: "Specialized thermal processing to enhance material properties and performance.",
-    image: "https://images.unsplash.com/photo-1581092921461-39b9d08a9442?auto=format&fit=crop&w=640&q=80",
+    title: "Tratamento Térmico de Qualidade",
+    description: "Aplicamos processos cuidadosos para melhorar a resistência e durabilidade dos metais.",
+    image: "/services/service3.jpg",
   },
   {
     id: 5,
-    title: "Quality Testing",
-    description: "Comprehensive metallurgical testing to ensure products meet the highest industry standards.",
-    image: "https://images.unsplash.com/photo-1527689368864-4dbcb132f54f?auto=format&fit=crop&w=640&q=80",
+    title: "Controle de Qualidade Rigoroso",
+    description: "Cada peça passa por um processo detalhado de inspeção para garantir a segurança e durabilidade do produto final.",
+    image: "/services/service4.jpg",
   },
   {
     id: 6,
-    title: "Design Consultation",
-    description: "Expert guidance on material selection and manufacturing processes for optimal results.",
-    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=640&q=80",
+    title: "Consultoria Especializada",
+    description: "Com anos de experiência, ajudamos você a escolher os melhores materiais e processos para seu projeto.",
+    image: "/services/service5.jpg",
   }
 ];
+
 
 // Projects data
 export const projects = [
@@ -98,16 +99,6 @@ export const stats = [
   { id: 4, value: "12", label: "Industry Awards" }
 ];
 
-// Industries for dropdown
-export const industries = [
-  { value: "aerospace", label: "Aerospace" },
-  { value: "automotive", label: "Automotive" },
-  { value: "energy", label: "Energy" },
-  { value: "industrial", label: "Industrial Manufacturing" },
-  { value: "medical", label: "Medical" },
-  { value: "other", label: "Other" }
-];
-
 // Navigation links
 export const navLinks = [
   { href: "#home", label: "Inicio" },
@@ -120,12 +111,12 @@ export const navLinks = [
 
 export const footerLinks = {
   quickLinks: [
-    { href: "#home", label: "Home" },
-    { href: "#services", label: "Services" },
-    { href: "#projects", label: "Projects" },
-    { href: "#about", label: "About Us" },
-    { href: "#waitlist", label: "Join Waitlist" },
-    { href: "#contact", label: "Contact" }
+    { href: "#home", label: "Inicio" },
+    { href: "#about", label: "Sobre nós" },
+    { href: "#services", label: "Serviços" },
+    { href: "#projects", label: "Projetos" },
+    { href: "#gallery", label: "Galeria" },
+    { href: "#contact", label: "Contato" }
   ],
   services: [
     { href: "#", label: "Precision Metalworking" },
@@ -162,41 +153,6 @@ export const galleryImages = [
     category: "process",
     image: "https://images.unsplash.com/photo-1564540574859-0dfb63985953?auto=format&fit=crop&w=800&q=80"
   },
-  {
-    id: 4,
-    title: "Quality Inspection",
-    category: "quality",
-    image: "https://images.unsplash.com/photo-1533636721434-0e2d61030955?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    id: 5,
-    title: "Metal Cutting Process",
-    category: "process",
-    image: "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    id: 6,
-    title: "Workshop Environment",
-    category: "workshop",
-    image: "https://images.unsplash.com/photo-1565785581718-9a1239973823?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    id: 7,
-    title: "CNC Machine Operation",
-    category: "process",
-    image: "https://images.unsplash.com/photo-1585269341414-34acc6c39e10?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    id: 8,
-    title: "Metalwork Detail",
-    category: "quality",
-    image: "https://images.unsplash.com/photo-1607893378714-007fd47c8719?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    id: 9,
-    title: "Material Storage",
-    category: "workshop",
-    image: "https://images.unsplash.com/photo-1578327028683-5516ab8ee6a3?auto=format&fit=crop&w=800&q=80"
-  }
+
 ];
 
