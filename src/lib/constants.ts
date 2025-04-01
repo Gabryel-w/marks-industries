@@ -1,4 +1,3 @@
-// Services data
 export const services = [
   {
     id: 1,
@@ -38,58 +37,34 @@ export const services = [
   }
 ];
 
-
-// Projects data
 export const projects = [
   {
     id: 1,
-    title: "Custom Stainless Steel Railings",
-    description: "Hand-crafted premium stainless steel railings for luxury residential properties, featuring seamless welds and custom finishes.",
-    image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=640&q=80",
-    category: "industrial",
-    tags: ["Residential", "Custom Design", "Stainless Steel"]
+    title: "Globo da Morte - Estrutura Resistente",
+    description: "Projetamos e fabricamos globos da morte personalizados, garantindo máxima segurança e precisão estrutural para apresentações radicais.",
+    image: "/products/product1.jpg",
+    category: "shows e espetáculos",
+    tags: ["Globo da Morte", "Estruturas Metálicas", "Segurança"]
   },
   {
     id: 2,
-    title: "Precision Automotive Components",
-    description: "High-performance metal components for vintage car restoration projects, created with traditional craftsmanship and modern precision.",
-    image: "https://images.unsplash.com/photo-1562141960-9a6d53670e4c?auto=format&fit=crop&w=640&q=80",
-    category: "automotive",
-    tags: ["Restoration", "Custom Parts"]
+    title: "Lareiras de Metal Sob Medida",
+    description: "Lareiras metálicas feitas à mão, combinando design sofisticado e durabilidade para ambientes internos e externos.",
+    image: "/products/product2.jpg",
+    category: "decoração",
+    tags: ["Lareiras", "Design Personalizado", "Ambientes Aconchegantes"]
   },
   {
     id: 3,
-    title: "Decorative Metal Art Pieces",
-    description: "Artistic metal sculptures and wall art for commercial spaces, combining functional design with aesthetic appeal.",
+    title: "Esculturas e Peças Artísticas",
+    description: "Criamos esculturas e peças decorativas em metal, trazendo exclusividade e sofisticação para qualquer ambiente.",
     image: "https://images.unsplash.com/photo-1626219346248-33e36f202025?auto=format&fit=crop&w=640&q=80",
-    category: "industrial",
-    tags: ["Decorative", "Art"]
+    category: "arte e decoração",
+    tags: ["Escultura", "Peças Decorativas", "Metal"]
   },
-  {
-    id: 4,
-    title: "Solar Panel Mounting Systems",
-    description: "Custom fabricated mounting brackets and frames for renewable energy installations, built for durability and ease of installation.",
-    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=640&q=80",
-    category: "energy",
-    tags: ["Renewable", "Custom Hardware"]
-  },
-  {
-    id: 5,
-    title: "Aircraft Component Restoration",
-    description: "Restoration of vintage aircraft components with meticulous attention to historical accuracy and FAA standards.",
-    image: "https://images.unsplash.com/photo-1536364127590-1594e3161294?auto=format&fit=crop&w=640&q=80",
-    category: "aerospace",
-    tags: ["Restoration", "Heritage"]
-  },
-  {
-    id: 6,
-    title: "Custom Metal Furniture",
-    description: "Bespoke metal furniture pieces that combine industrial aesthetics with comfort and functionality for both home and commercial spaces.",
-    image: "https://images.unsplash.com/photo-1581094488379-6a10d04c0f04?auto=format&fit=crop&w=640&q=80",
-    category: "industrial",
-    tags: ["Furniture", "Bespoke"]
-  }
+ 
 ];
+
 
 // About stats
 export const stats = [

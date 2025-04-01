@@ -147,13 +147,7 @@ export default function Header() {
               ))}
             </ul>
 
-            <div className="mt-10 flex justify-center">
-              <button className="rounded-full px-8">
-                <a href="#contact" onClick={(e) => handleNavClick(e, "#contact")}>
-                  Contato
-                </a>
-              </button>
-            </div>
+            
 
             <div className="mt-12 text-center text-gray-600">
               <p className="mb-2 text-sm">Tem dúvidas? Ligue para nós</p>

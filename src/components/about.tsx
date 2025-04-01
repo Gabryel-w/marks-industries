@@ -34,7 +34,7 @@ export default function About() {
           
           <div className="grid grid-cols-2 gap-4">
             {[
-              "https://images.unsplash.com/photo-1571586100127-cdaef780fc61?auto=format&fit=crop&w=640&q=80",
+              "about/about3.jpg",
               "https://images.unsplash.com/photo-1473621038790-b778b4750efe?auto=format&fit=crop&w=640&q=80",
               "https://images.unsplash.com/photo-1534398079543-7ae6d016b86a?auto=format&fit=crop&w=640&q=80",
               "/about/about1.jpg"
