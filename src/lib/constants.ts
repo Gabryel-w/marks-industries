@@ -56,17 +56,39 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Esculturas e Peças Artísticas",
-    description: "Criamos esculturas e peças decorativas em metal, trazendo exclusividade e sofisticação para qualquer ambiente.",
-    image: "https://images.unsplash.com/photo-1626219346248-33e36f202025?auto=format&fit=crop&w=640&q=80",
-    category: "arte e decoração",
-    tags: ["Escultura", "Peças Decorativas", "Metal"]
+    title: "Fabricação de Calhas Metálicas",
+    description: "Fabricação e instalação de calhas metálicas sob medida, garantindo proteção eficiente contra infiltrações e durabilidade.",
+    image: "/products/product3.png",
+    category: "Casas",
+    tags: ["Calhas", "Drenagem", "Estruturas Metálicas"]
   },
- 
+  {
+    id: 4,
+    title: "Equipamentos para Circo",
+    description: "Produção de equipamentos metálicos para circos, incluindo estruturas para acrobacias e suporte para atrações aéreas.",
+    image: "/products/product6.png",
+    category: "shows e espetáculos",
+    tags: ["Circo", "Estruturas Metálicas", "Acrobacias"]
+  },
+  {
+    id: 5,
+    title: "Chaminés Metálicas Personalizadas",
+    description: "Chaminés metálicas sob medida para indústrias e residências, oferecendo segurança e eficiência na ventilação.",
+    image: "/products/product4.jpg",
+    category: "construção",
+    tags: ["Chaminés", "Ventilação", "Personalizado"]
+  },
+  {
+    id: 6,
+    title: "Consertos em Geral",
+    description: "Realizamos consertos e manutenção em estruturas metálicas, garantindo qualidade e aumento da vida útil dos produtos.",
+    image: "/products/product5.jpg",
+    category: "manutenção",
+    tags: ["Reparos", "Soldagem", "Manutenção"]
+  }
 ];
 
 
-// About stats
 export const stats = [
   { id: 1, value: "25+", label: "Years Combined Experience" },
   { id: 2, value: "500+", label: "Projects Completed" },
@@ -74,7 +96,6 @@ export const stats = [
   { id: 4, value: "12", label: "Industry Awards" }
 ];
 
-// Navigation links
 export const navLinks = [
   { href: "#home", label: "Inicio" },
   { href: "#about", label: "Sobre" },

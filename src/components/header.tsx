@@ -22,7 +22,6 @@ export default function Header() {
 
       setScrolled(window.scrollY > offset);
 
-      // Determinar seção ativa
       const sections = document.querySelectorAll("section[id]");
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
@@ -69,7 +68,7 @@ export default function Header() {
           }`}
         >
           <Hammer className={`h-6 w-6 transition-colors ${inHeroSection ? "text-white" : "text-blue-600"}`} />
-          <span>Industria<span className="font-light">Marks</span></span>
+          <span>Marks<span className="font-light">Indústria</span></span>
         </a>
 
         {/* Contato (Desktop) */}
