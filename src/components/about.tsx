@@ -1,31 +1,31 @@
-"use client"
+"use client";
 
 export default function About() {
   const stats = [
-    { value: "25+", label: "Years Combined Experience" },
-    { value: "500+", label: "Projects Completed" },
-    { value: "50+", label: "Industry Partners" },
-    { value: "12", label: "Industry Awards" }
+    { value: "25+", label: "Anos de Experiência" },
+    { value: "500+", label: "Projetos Completos" },
+    { value: "50+", label: "Parceiros da Indústria" },
+    { value: "12", label: "Prêmios Recebidos" }
   ];
 
   return (
-    <section id="about" className="py-20 bg-[#F2D0A4]">
+    <section id="about" className="py-20 bg-[#F3F4F6]">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="font-heading font-bold text-3xl md:text-4xl mb-6">
-              Sobre <span className="text-primary">Indústria Marks</span>
+            <h2 className="font-heading font-bold text-3xl md:text-4xl mb-6 text-gray-900">
+              Sobre <span className="text-blue-600">Indústria Marks</span>
             </h2>
             <p className="text-lg text-gray-700 mb-6">
-              Founded in 2010, Indústria Marks has grown to become a leading provider of advanced metallurgical solutions for industries worldwide. Our commitment to innovation, precision, and quality has established us as trusted partners for companies seeking exceptional metal manufacturing capabilities.
+              Fundada em 2010, a Indústria Marks se tornou uma referência em soluções metalúrgicas avançadas. Nosso compromisso com inovação, precisão e qualidade nos torna parceiros confiáveis para diversas indústrias ao redor do mundo.
             </p>
             <p className="text-lg text-gray-700 mb-6">
-              With state-of-the-art facilities and a team of experienced metallurgists and engineers, we deliver comprehensive solutions from concept to production. Our expertise spans various industries including aerospace, automotive, energy, and industrial manufacturing.
+              Contamos com instalações de ponta e uma equipe experiente de engenheiros e metalurgistas, entregando soluções completas desde o conceito até a produção para setores como aeroespacial, automotivo e manufatura industrial.
             </p>
             <div className="grid grid-cols-2 gap-6 mt-8">
               {stats.map((stat, index) => (
                 <div key={index}>
-                  <div className="text-4xl font-heading font-bold text-accent mb-2">{stat.value}</div>
+                  <div className="text-4xl font-heading font-bold text-blue-600 mb-2">{stat.value}</div>
                   <p className="text-gray-600">{stat.label}</p>
                 </div>
               ))}
@@ -33,34 +33,20 @@ export default function About() {
           </div>
           
           <div className="grid grid-cols-2 gap-4">
-            <div className="rounded-lg overflow-hidden shadow-lg">
-              <img 
-                src="https://images.unsplash.com/photo-1571586100127-cdaef780fc61?auto=format&fit=crop&w=640&q=80" 
-                alt="Manufacturing facility" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="rounded-lg overflow-hidden shadow-lg mt-8">
-              <img 
-                src="https://images.unsplash.com/photo-1473621038790-b778b4750efe?auto=format&fit=crop&w=640&q=80" 
-                alt="Metal fabrication" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="rounded-lg overflow-hidden shadow-lg">
-              <img 
-                src="https://images.unsplash.com/photo-1534398079543-7ae6d016b86a?auto=format&fit=crop&w=640&q=80" 
-                alt="Quality inspection" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="rounded-lg overflow-hidden shadow-lg mt-8">
-              <img 
-                src="https://images.unsplash.com/photo-1520586000964-d5d9ed8f8397?auto=format&fit=crop&w=640&q=80" 
-                alt="Engineering team" 
-                className="w-full h-full object-cover"
-              />
-            </div>
+            {[
+              "https://images.unsplash.com/photo-1571586100127-cdaef780fc61?auto=format&fit=crop&w=640&q=80",
+              "https://images.unsplash.com/photo-1473621038790-b778b4750efe?auto=format&fit=crop&w=640&q=80",
+              "https://images.unsplash.com/photo-1534398079543-7ae6d016b86a?auto=format&fit=crop&w=640&q=80",
+              "/about/imagem1.jpg"
+
+            ].map((src, index) => (
+              <div
+                key={index}
+                className="rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105"
+              >
+                <img src={src} alt="Imagem da Indústria" className="w-full h-full object-cover" />
+              </div>
+            ))}
           </div>
         </div>
       </div>

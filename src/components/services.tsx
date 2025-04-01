@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ArrowRight, Heart, Shield, Clock, Award } from "lucide-react";
 import { services } from "@/lib/constants";
@@ -16,63 +16,46 @@ export default function Services() {
   };
 
   return (
-    <section id="services" className="py-24 bg-[#FFEED1]">
+    <section id="services" className="py-24 bg-[#1E40AF]">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto mb-16">
-          <div className="inline-block bg-primary/10 rounded-lg px-3 py-1 text-primary font-medium text-sm mb-4">
-            Our Specialty
+        <div className="max-w-3xl mx-auto mb-16 text-center">
+          <div className="inline-block bg-blue-600 rounded-lg px-3 py-1 text-white font-medium text-sm mb-4">
+            Nossos Serviços
           </div>
-          <h2 className="font-heading font-bold text-3xl md:text-4xl lg:text-5xl mb-6">
-            Family Craftsmanship For Your <span className="text-primary">Metal Projects</span>
+          <h2 className="font-heading font-bold text-3xl md:text-4xl lg:text-5xl mb-6 text-white">
+            Soluções Metalúrgicas <span className="text-white">de Excelência</span>
           </h2>
-          <p className="text-lg text-gray-600">
-            With over 25 years of experience, our family-owned business delivers quality metal fabrication with a personal touch. We treat every project as if it were our own.
+          <p className="text-lg text-gray-300">
+            Com mais de 25 anos de experiência, entregamos fabricação metálica de qualidade com um toque personalizado. Cada projeto recebe o cuidado e a precisão que merece.
           </p>
         </div>
-        
-        {/* Family values section */}
+
+        {/* Valores da empresa */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-6 mb-20">
-          <div className="text-center px-4">
-            <div className="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
-              <Heart className="h-7 w-7" />
+          {[
+            { icon: Heart, title: "Atendimento Personalizado", text: "Cada cliente é tratado como parte da família." },
+            { icon: Shield, title: "Qualidade Garantida", text: "Nosso nome está em cada peça que produzimos." },
+            { icon: Clock, title: "Entrega Pontual", text: "Compromisso com prazos sem comprometer a qualidade." },
+            { icon: Award, title: "Expertise Legado", text: "Conhecimento passado por gerações." },
+          ].map((item, index) => (
+            <div key={index} className="text-center px-4">
+              <div className="w-14 h-14 rounded-full bg-[#374151] text-yellow-300  flex items-center justify-center mx-auto mb-4">
+                <item.icon className="h-7 w-7" />
+              </div>
+              <h3 className="font-medium text-white text-lg mb-2">{item.title}</h3>
+              <p className="text-gray-300 text-sm">{item.text}</p>
             </div>
-            <h3 className="font-medium text-gray-900 text-lg mb-2">Personal Care</h3>
-            <p className="text-gray-600 text-sm">We treat every client like family, providing personalized attention to your unique needs.</p>
-          </div>
-          
-          <div className="text-center px-4">
-            <div className="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
-              <Shield className="h-7 w-7" />
-            </div>
-            <h3 className="font-medium text-gray-900 text-lg mb-2">Quality Guarantee</h3>
-            <p className="text-gray-600 text-sm">Our family name is on every piece we craft, so quality is our highest priority.</p>
-          </div>
-          
-          <div className="text-center px-4">
-            <div className="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
-              <Clock className="h-7 w-7" />
-            </div>
-            <h3 className="font-medium text-gray-900 text-lg mb-2">On-Time Delivery</h3>
-            <p className="text-gray-600 text-sm">We respect your timelines and always deliver as promised, without cutting corners.</p>
-          </div>
-          
-          <div className="text-center px-4">
-            <div className="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
-              <Award className="h-7 w-7" />
-            </div>
-            <h3 className="font-medium text-gray-900 text-lg mb-2">Legacy Expertise</h3>
-            <p className="text-gray-600 text-sm">Skills and knowledge passed down through generations for unmatched craftsmanship.</p>
-          </div>
+          ))}
         </div>
-        
-        {/* Services grid */}
+
+        {/* Serviços oferecidos */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
           {services.map((service) => (
             <div key={service.id} className="group">
               <div className="relative mb-6 overflow-hidden rounded-xl">
-                <img 
-                  src={service.image} 
-                  alt={service.title} 
+                <img
+                  src={service.image}
+                  alt={service.title}
                   className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70"></div>
@@ -80,29 +63,16 @@ export default function Services() {
                   <h3 className="font-medium text-white text-xl">{service.title}</h3>
                 </div>
               </div>
-              <p className="text-gray-600 mb-4">
-                {service.description}
-              </p>
-              <a 
+              <p className="text-gray-300 mb-4">{service.description}</p>
+              <a
                 href="#contact"
-                className="text-primary font-medium hover:text-primary/80 transition-colors inline-flex items-center"
+                className="text-yellow-300 font-medium hover:text-[#D97706]/80 transition-colors inline-flex items-center"
                 onClick={scrollToContact}
               >
-                Request Service <ArrowRight className="ml-2 h-4 w-4" />
+                Solicitar Orçamento <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </div>
           ))}
-        </div>
-        
-        {/* CTA */}
-        <div className="mt-20 text-center">
-          <button 
-            className="rounded-full px-8"
-          >
-            <a href="#contact" onClick={scrollToContact}>
-              Discuss Your Project With Us
-            </a>
-          </button>
         </div>
       </div>
     </section>

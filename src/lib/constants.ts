@@ -110,11 +110,12 @@ export const industries = [
 
 // Navigation links
 export const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#services", label: "Services" },
-  { href: "#projects", label: "Projects" },
-  { href: "#about", label: "About" },
-  { href: "#contact", label: "Contact" }
+  { href: "#home", label: "Inicio" },
+  { href: "#about", label: "Sobre" },
+  { href: "#services", label: "Serviços" },
+  { href: "#projects", label: "Projetos" },
+  { href: "#gallery", label: "Galeria" },
+  { href: "#contact", label: "Contato" }
 ];
 
 export const footerLinks = {
