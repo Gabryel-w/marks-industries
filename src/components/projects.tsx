@@ -2,7 +2,8 @@
 
 import { useState, useRef, useEffect } from "react";
 import { projects } from "@/lib/constants";
-import {Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { Star, ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 export default function Projects() {
   const [activeFilter] = useState("all");
@@ -81,8 +82,8 @@ export default function Projects() {
               <button
                 onClick={() => scroll('right')}
                 className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-blue-600 rounded-full p-2 shadow-md -mr-4 transition-opacity duration-300 ${gridRef.current && scrollPosition >= gridRef.current.scrollWidth - gridRef.current.clientWidth - 10
-                    ? 'opacity-0'
-                    : 'opacity-100'
+                  ? 'opacity-0'
+                  : 'opacity-100'
                   }`}
                 aria-label="Scroll right"
               >
@@ -101,15 +102,17 @@ export default function Projects() {
               <div
                 key={project.id}
                 className={`bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 group transition-all duration-300 hover:shadow-xl flex-shrink-0 snap-start hover-lift ${index === 0
-                    ? "w-full sm:w-[calc(100%-1.5rem)] md:w-[calc(75%-1rem)] lg:w-[calc(65%-1rem)]"
-                    : "w-[90%] sm:w-[calc(65%-0.75rem)] md:w-[calc(50%-1rem)] lg:w-[calc(40%-0.75rem)]"
+                  ? "w-full sm:w-[calc(100%-1.5rem)] md:w-[calc(75%-1rem)] lg:w-[calc(65%-1rem)]"
+                  : "w-[90%] sm:w-[calc(65%-0.75rem)] md:w-[calc(50%-1rem)] lg:w-[calc(40%-0.75rem)]"
                   }`}
                 data-category={project.category}
               >
                 <div className="relative overflow-hidden aspect-[4/3]">
-                  <img
+                  <Image
                     src={project.image}
                     alt={project.title}
+                    width={500} 
+                    height={500} 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

@@ -1,5 +1,5 @@
 "use client";
-import { Phone, Mail, Clock, Facebook, Instagram, MapPin, MessageSquare } from "lucide-react";
+import { Phone, Clock, Facebook, Instagram, MapPin, MessageSquare } from "lucide-react";
 
 export default function Contact() {
   const openWhatsApp = () => {
